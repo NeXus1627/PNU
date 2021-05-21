@@ -1,6 +1,5 @@
 <?php
-session_start(); 
-include 'security.php';
+session_start();
 include 'includes/header.php';
 ?>
 
@@ -23,7 +22,7 @@ include 'includes/header.php';
                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                   </div>
 
-					
+
 					<?php if(isset($_SESSION['status']) && $_SESSION['status']!=""): ?>
       				<h3 class="text-danger text-center"><?php echo $_SESSION['status']; unset($_SESSION['status']); ?></h3>
     				<?php  endif;?>
@@ -60,7 +59,7 @@ include 'includes/header.php';
   </div>
 
 
-<?php 
+<?php
 include 'includes/scripts.php';
-
+session_destroy();
   ?>

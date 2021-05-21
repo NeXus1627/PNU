@@ -3,7 +3,7 @@ include 'security.php';
 include 'includes/db_admin.php';
 include 'includes/header.php';
 include 'includes/navbar.php';
-include 'includes/user_bar.php'; 
+include 'includes/user_bar.php';
 ?>
 
 <div class="modal fade" id="addadminprofile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -32,7 +32,7 @@ include 'includes/user_bar.php';
                 <input type="password" name="confirmpassword" class="form-control" placeholder="Confirm Password">
             </div>
             <input type="hidden" name="usertype" value="admin">
-        
+
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -50,23 +50,19 @@ include 'includes/user_bar.php';
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
   <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary">Admin Profile 
+    <h6 class="m-0 font-weight-bold text-primary">Admin Profile
             <button type="button" class="ml-2 btn btn-primary btn-sm" data-toggle="modal" data-target="#addadminprofile">
-              Add Admin Profile 
+              Add Admin Profile
             </button>
     </h6>
   </div>
 
   <div class="card-body">
 
-    <?php if(isset($_SESSION['success']) && $_SESSION['success']!=""): ?>
-      <h2 class="text-success"><?php echo $_SESSION['success']; unset($_SESSION['success']); ?></h2>
-    <?php elseif(isset($_SESSION['status']) && $_SESSION['status']!=""): ?>
-      <h2 class="text-danger"><?php echo $_SESSION['status']; unset($_SESSION['status']); ?></h2>
-    <?php  endif;?>
+  
 
     <div class="table-responsive">
-      <?php 
+      <?php
         $query = $link1->query("SELECT * FROM admins");
         $row = $query->fetch_all(MYSQLI_ASSOC);
        ?>
@@ -113,8 +109,7 @@ include 'includes/user_bar.php';
 <!-- /.container-fluid -->
 
 
- <?php 
+ <?php
 include 'includes/scripts.php';
 include 'includes/footer.php';
   ?>
-

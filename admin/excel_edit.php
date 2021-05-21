@@ -3,7 +3,7 @@ include 'security.php';
 include 'includes/db_admin.php';
 include 'includes/header.php';
 include 'includes/navbar.php';
-include 'includes/user_bar.php'; 
+include 'includes/user_bar.php';
 ?>
 
 <div class="container-fluid">
@@ -11,21 +11,57 @@ include 'includes/user_bar.php';
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
   <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary">Edit</h6>
+    <h6 class="m-0 font-weight-bold text-primary">Edit mark</h6>
   </div>
 
   <div class="card-body">
-<?php 
+<?php
 
-	if (isset($_POST['mark_btn'])) {
+	if (isset($_POST['edit_btn_excel1'])) {
 		$id = $_POST['edit_id'];
 		$query = $link->query("SELECT * FROM course_1 WHERE id = '$id'");
         $row = $query->fetch_all(MYSQLI_ASSOC);
         foreach ($row as $key) {
         	$id = $key['id'];
         	$name = $key['name'];
-        	$lastname= $key['lastname'];	
-          $lastname= $key['lastname'];  
+        	$lastname= $key['lastname'];
+          $lastname= $key['lastname'];
+        }
+	}
+
+  if (isset($_POST['edit_btn_excel2'])) {
+		$id = $_POST['edit_id'];
+		$query = $link->query("SELECT * FROM course_2 WHERE id = '$id'");
+        $row = $query->fetch_all(MYSQLI_ASSOC);
+        foreach ($row as $key) {
+        	$id = $key['id'];
+        	$name = $key['name'];
+        	$lastname= $key['lastname'];
+          $lastname= $key['lastname'];
+        }
+	}
+
+  if (isset($_POST['edit_btn_excel3'])) {
+		$id = $_POST['edit_id'];
+		$query = $link->query("SELECT * FROM course_3 WHERE id = '$id'");
+        $row = $query->fetch_all(MYSQLI_ASSOC);
+        foreach ($row as $key) {
+        	$id = $key['id'];
+        	$name = $key['name'];
+        	$lastname= $key['lastname'];
+          $lastname= $key['lastname'];
+        }
+	}
+
+  if (isset($_POST['edit_btn_excel4'])) {
+		$id = $_POST['edit_id'];
+		$query = $link->query("SELECT * FROM course_4 WHERE id = '$id'");
+        $row = $query->fetch_all(MYSQLI_ASSOC);
+        foreach ($row as $key) {
+        	$id = $key['id'];
+        	$name = $key['name'];
+        	$lastname= $key['lastname'];
+          $lastname= $key['lastname'];
         }
 	}
 
@@ -35,21 +71,25 @@ include 'includes/user_bar.php';
       	<input type="hidden" name="edit_id" value="<?php echo $key['id'];?>">
   	   <div class="form-group">
                 <label>Category name</label>
-                <input type="text" name="edit_name" class="form-control" placeholder="Enter Username" value="<?php echo $key['name'];?>">
-        </div>
-        <div class="form-group">
-    		<div class="custom-file">
-  				<input name="image" type="file" class="custom-file-input">
-  				<label class="custom-file-label">Choose file</label>
-  			</div>
-    	</div>
-        <div class="form-group">
-        	<input type="hidden" name="oldimage" value="<?php echo $key['image'];?>">
-        	<img class="img-fluid" src="<?php echo $key['image'];?>" alt="">
+                <input type="text" name="mark" class="form-control" placeholder="Enter mark" value="<?php echo $key['mark'];?>">
         </div>
              <div class="form-group">
-                <a class="btn btn-danger" href="categories.php">Cancel</a>
-                <button name="update_btn_cat" class="btn btn-info" type="submit">Update</button>
+                <a class="btn btn-danger" href="excel.php">Cancel</a>
+
+                <?php if (isset($_POST['edit_btn_excel1'])): ?>
+                <button name="update_btn_excel1" class="btn btn-info" type="submit">Update</button>
+              <?php endif; ?>
+                <?php if (isset($_POST['edit_btn_excel2'])): ?>
+                <button name="update_btn_excel2" class="btn btn-info" type="submit">Update</button>
+              <?php endif; ?>
+
+                <?php if (isset($_POST['edit_btn_excel3'])): ?>
+                <button name="update_btn_excel3" class="btn btn-info" type="submit">Update</button>
+              <?php endif; ?>
+
+                <?php if (isset($_POST['edit_btn_excel4'])): ?>
+                <button name="update_btn_excel4" class="btn btn-info" type="submit">Update</button>
+              <?php endif; ?>
             </div>
           </form>
   </div>
@@ -61,7 +101,7 @@ include 'includes/user_bar.php';
 </div>
 <!-- /.container-fluid -->
 
- <?php 
+ <?php
 include 'includes/scripts.php';
 include 'includes/footer.php';
   ?>

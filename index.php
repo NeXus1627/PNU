@@ -1,55 +1,32 @@
-<?php 
+<?php
 include 'includes/db_admin.php';
 include 'mark.php';
 include 'actions.php';
+include 'includes/header.php';
  ?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <link href="style.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <title>PNU lab</title>
-<style>
-  body 
-  { 
-    background: url(images/ПНУ.jpg) no-repeat center center fixed;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    -background-size:cover;
-   }
-</style> 
 
-
-  </head>
-  <body >
   	<!-- Navbar -->
    <nav class="navbar navbar-expand-lg navbar-light bg-light " id="navbar">
   <a class="navbar-brand" href="#"> </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class=" navbar-toggler-icon"></span>
   </button>
-  <p class="text-primary mt-2  p-2 ml-sm-auto" style="font-family: Comic Sans MS, serif; font-size:16pt">PNU check lab work online</p>
-    
+  <p class="text-primary mt-2  p-2 ml-sm-auto"  style="font-family: Comic Sans MS, serif; font-size:16pt">PNU check lab work online</p>
+
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav ml-auto mr-4">
       <li class="nav-item mr-3 ">
-       <button data-toggle="modal" class="btn-light btn" data-target="#help"><a class="nav-link text-black" href="#">Help</a></button> 
+       <button data-toggle="modal" class="btn-light btn" data-target="#help"><a class="nav-link text-black" href="#">Help</a></button>
       </li>
       <li class="nav-item " >
-        <button data-toggle="modal" class="btn-light btn" data-target="#contacts"><a class="nav-link text-black" href="#">Сontacts</a></button> 
+        <button data-toggle="modal" class="btn-light btn" data-target="#contacts"><a class="nav-link text-black" href="#">Сontacts</a></button>
       </li>
     </ul>
-    
+
       <button name="excel" type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success my-2 my-sm-2 mr-4" data-toggle="modal" data-target="#addexcel">Excel</button>
       <button name="word" type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success my-2 my-sm-2 mr-4" data-toggle="modal" data-target="#addword">Word</button>
-    
+
   </div>
 </nav>
 <!-- Navbar end -->
@@ -122,7 +99,7 @@ include 'actions.php';
         </button>
       </div>
       <div class="modal-body">
-      
+
         <form action="actions.php" method="post" enctype="multipart/form-data">
           <div class="form-group">
             <label>Ім'я</label>
@@ -187,7 +164,7 @@ include 'actions.php';
         </button>
       </div>
       <div class="modal-body">
-      
+
         <form action="actions.php" method="post" enctype="multipart/form-data">
           <div class="form-group">
             <label>Ім'я</label>
@@ -224,8 +201,8 @@ include 'actions.php';
             <label>Номер лабoраторної роботи</label>
             <input type="number" name="lab_num" class="form-control" required>
           </div>
-          
-          
+
+
           <div class="form-group">
               <div class="custom-file">
               <input name="image" type="file" class="custom-file-input">
@@ -263,7 +240,7 @@ include 'actions.php';
       <li ><button type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success " data-toggle="modal" data-target="#ДЗ-1"> ∽ ДЗ ∽</button></li>
       <li ><button type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success " data-toggle="modal" data-target="#ПР-1"> ∽ ПР ∽</button></li>
       <li ><button type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success " data-toggle="modal" data-target="#ТР-1"> ∽ ТР ∽</button></li>
-    </ul></li>  
+    </ul></li>
 </div>
 
 
@@ -275,7 +252,7 @@ include 'actions.php';
       <li ><button type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success " data-toggle="modal" data-target="#ДЗ-2"> ∽ ДЗ ∽</button></li>
       <li ><button type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success " data-toggle="modal" data-target="#ПР-2"> ∽ ПР ∽</button></li>
       <li ><button type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success " data-toggle="modal" data-target="#ТР-2"> ∽ ТР ∽</button></li>
-    </ul></li> 
+    </ul></li>
 
 
 
@@ -287,7 +264,7 @@ include 'actions.php';
       <li ><button type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success " data-toggle="modal" data-target="#ДЗ-3"> ∽ ДЗ ∽</button></li>
       <li ><button type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success " data-toggle="modal" data-target="#ПР-3"> ∽ ПР ∽</button></li>
       <li ><button type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success " data-toggle="modal" data-target="#ТР-3"> ∽ ТР ∽</button></li>
-    </ul></li> 
+    </ul></li>
 
 
 
@@ -299,34 +276,32 @@ include 'actions.php';
       <li ><button type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success " data-toggle="modal" data-target="#ДЗ-4"> ∽ ДЗ ∽</button></li>
       <li ><button type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success " data-toggle="modal" data-target="#ПР-4"> ∽ ПР ∽</button></li>
       <li ><button type="button"class=" bg-primary text-white rounded-pill btn btn-outline-success " data-toggle="modal" data-target="#ТР-4"> ∽ ТР ∽</button></li>
-    </ul></li> 
+    </ul></li>
 
- 
+
 </ul>
 
 </form>
 
 <hr>
 <!-- Коротка інформація -->
-<div class="modal" id="short" tabindex="-1" role="dialog">
+<div class="modal " id="short" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Коротко про нас</h5>
+        <h5 class="modal-title ">Коротко про нас</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
          <p >
-          Портал спроектований та розроблений студентами групи ПМ-31<br>
+          Портал спроектований та розроблений студентом групи ПМ-41<br>
               Створений для перевірки лабораторних робіт Word та Excel
               <hr>
               <h4>Розробники:<br></h4>
               Васильків Олег<br>
-              Веляник Софія<br>
-              Гудима Андрій<br>
-              Кузюк Ростислав <br>
+
         </p>
       </div>
       <div class="modal-footer">
@@ -341,48 +316,6 @@ include 'actions.php';
 
 <!-- footer -->
 
-<footer class="bg fixed-bottom  " >
-                      <!--Adress-->
-
-
-  <section>
-<h4 class=" mt-3 mb-3 ml-4 text-secondary border-left p-1 border-primary ">DREAM TEAM </h4>
-<button data-toggle="modal" class="btn " data-target="#short" ><h6 class="border-left p-1 border-primary ml-4 text-dark mb-3"> Коротко про проект та розробників</button> </h6>
-<hr>
-
-
-  <div class="row">                   
-    <div class="mt-2 mb-2 ml-3">
-      <a href="https://www.instagram.com/college.if" target="_blank">
-        <i class="fa fa-instagram ml-4 text-primary"> </i>
-      </a>
-      <a href="https://www.facebook.com/college.if" target="_blank">
-        <i class="fa fa-facebook text-primary ml-4"></i>
-      </a>
-      <a href="https://ifk.pnu.edu.ua/" target="_blank">
-        <i class="fa fa-university text-primary ml-4"></i>
-      </a>
-      <a href="https://t.me/ifcpnu" target="_blank">
-        <i class="fa fa-paper-plane text-primary ml-4"></i>
-      </a>
-
-    </div>             
-  </div>
-
-
- <h6 class="text-right mt-0 mr-2 mb-3" >Made with love by PNU<i class="fa fa-heart ml-1 "></i></h6>
-</section>
- 
-</footer>
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
-
+<?php
+include 'includes/footer.php';
+ ?>

@@ -2,7 +2,7 @@
 <!-- Перший курс таблиці з оцінками -->
 
 
-<?php 
+<?php
 /* Excel */
         $e_po1 = $link->query("SELECT * FROM course_1 WHERE grupa='PO'");
         $e_rowpo1 = $e_po1->fetch_all(MYSQLI_ASSOC);
@@ -61,7 +61,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -73,9 +73,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -86,7 +86,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -98,9 +98,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -131,7 +131,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -143,9 +143,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -156,7 +156,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -168,9 +168,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -201,7 +201,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -213,9 +213,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -226,7 +226,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -238,9 +238,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -272,7 +272,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -284,9 +284,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -297,7 +297,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -309,9 +309,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -342,7 +342,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -354,9 +354,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -367,7 +367,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -379,9 +379,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -413,7 +413,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -425,9 +425,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -438,7 +438,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -450,9 +450,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -463,7 +463,7 @@
 
 <!-- Другий курс таблиці з оцінками -->
 
-<?php 
+<?php
 /* Excel */
         $e_po2 = $link->query("SELECT * FROM course_2 WHERE grupa='PO'");
         $e_rowpo2 = $e_po2->fetch_all(MYSQLI_ASSOC);
@@ -528,7 +528,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -540,9 +540,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -553,7 +553,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -565,9 +565,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -600,7 +600,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -612,9 +612,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -625,7 +625,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -637,9 +637,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -671,7 +671,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -683,9 +683,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -696,7 +696,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -708,9 +708,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -742,7 +742,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -754,9 +754,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -767,7 +767,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -779,9 +779,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -813,7 +813,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -825,9 +825,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -838,7 +838,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -850,9 +850,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -884,7 +884,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -896,9 +896,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -909,7 +909,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -921,9 +921,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -934,42 +934,42 @@
 
 <!-- Третій курс  -->
 
-<?php 
+<?php
 /* Excel */
-        $e_po3 = $link->query("SELECT * FROM course_2 WHERE grupa='PO'");
+        $e_po3 = $link->query("SELECT * FROM course_3 WHERE grupa='PO'");
         $e_rowpo3 = $e_po3->fetch_all(MYSQLI_ASSOC);
 
-        $e_do3 = $link->query("SELECT * FROM course_2 WHERE grupa='DO'");
+        $e_do3 = $link->query("SELECT * FROM course_3 WHERE grupa='DO'");
         $e_rowdo3 = $e_do3->fetch_all(MYSQLI_ASSOC);
 
-        $e_pm3 = $link->query("SELECT * FROM course_2 WHERE grupa='PM'");
+        $e_pm3 = $link->query("SELECT * FROM course_3 WHERE grupa='PM'");
         $e_rowpm3 = $e_pm3->fetch_all(MYSQLI_ASSOC);
 
-        $e_dz3 = $link->query("SELECT * FROM course_2 WHERE grupa='DZ'");
+        $e_dz3 = $link->query("SELECT * FROM course_3 WHERE grupa='DZ'");
         $e_rowdz3 = $e_dz3->fetch_all(MYSQLI_ASSOC);
 
-        $e_pr3 = $link->query("SELECT * FROM course_2 WHERE grupa='PR'");
+        $e_pr3 = $link->query("SELECT * FROM course_3 WHERE grupa='PR'");
         $e_rowpr3 = $e_pr3->fetch_all(MYSQLI_ASSOC);
 
-        $e_tr3 = $link->query("SELECT * FROM course_2 WHERE grupa='TR'");
+        $e_tr3 = $link->query("SELECT * FROM course_3 WHERE grupa='TR'");
         $e_rowtr3 = $e_tr3->fetch_all(MYSQLI_ASSOC);
 /* Word*/
-        $w_po3 = $link1->query("SELECT * FROM course_2 WHERE grupa='PO'");
+        $w_po3 = $link1->query("SELECT * FROM course_3 WHERE grupa='PO'");
         $w_rowpo3 = $w_po3->fetch_all(MYSQLI_ASSOC);
 
-        $w_do3 = $link1->query("SELECT * FROM course_2 WHERE grupa='DO'");
+        $w_do3 = $link1->query("SELECT * FROM course_3 WHERE grupa='DO'");
         $w_rowdo3 = $w_do3->fetch_all(MYSQLI_ASSOC);
 
-        $w_pm3 = $link1->query("SELECT * FROM course_2 WHERE grupa='PM'");
+        $w_pm3 = $link1->query("SELECT * FROM course_3 WHERE grupa='PM'");
         $w_rowpm3 = $w_pm3->fetch_all(MYSQLI_ASSOC);
 
-        $w_dz3 = $link1->query("SELECT * FROM course_2 WHERE grupa='DZ'");
+        $w_dz3 = $link1->query("SELECT * FROM course_3 WHERE grupa='DZ'");
         $w_rowdz3 = $w_dz3->fetch_all(MYSQLI_ASSOC);
 
-        $w_pr3 = $link1->query("SELECT * FROM course_2 WHERE grupa='PR'");
+        $w_pr3 = $link1->query("SELECT * FROM course_3 WHERE grupa='PR'");
         $w_rowpr3 = $w_pr3->fetch_all(MYSQLI_ASSOC);
 
-        $w_tr3 = $link1->query("SELECT * FROM course_2 WHERE grupa='TR'");
+        $w_tr3 = $link1->query("SELECT * FROM course_3 WHERE grupa='TR'");
         $w_rowtr3 = $w_tr3->fetch_all(MYSQLI_ASSOC);
      ?>
 
@@ -999,7 +999,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -1011,9 +1011,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -1024,7 +1024,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -1036,9 +1036,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -1071,7 +1071,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -1083,9 +1083,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -1096,7 +1096,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -1108,9 +1108,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -1141,7 +1141,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -1153,9 +1153,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -1166,7 +1166,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -1178,9 +1178,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -1210,7 +1210,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -1222,9 +1222,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -1235,7 +1235,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -1247,9 +1247,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -1280,7 +1280,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -1292,9 +1292,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -1305,7 +1305,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -1317,9 +1317,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -1349,7 +1349,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -1361,9 +1361,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -1374,7 +1374,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -1386,9 +1386,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -1399,42 +1399,42 @@
 
 <!-- Четвертій курс -->
 
-<?php 
+<?php
 /* Excel */
-        $e_po4 = $link->query("SELECT * FROM course_2 WHERE grupa='PO'");
+        $e_po4 = $link->query("SELECT * FROM course_4 WHERE grupa='PO'");
         $e_rowpo4 = $e_po4->fetch_all(MYSQLI_ASSOC);
 
-        $e_do4 = $link->query("SELECT * FROM course_2 WHERE grupa='DO'");
+        $e_do4 = $link->query("SELECT * FROM course_4 WHERE grupa='DO'");
         $e_rowdo4 = $e_do4->fetch_all(MYSQLI_ASSOC);
 
-        $e_pm4 = $link->query("SELECT * FROM course_2 WHERE grupa='PM'");
+        $e_pm4 = $link->query("SELECT * FROM course_4 WHERE grupa='PM'");
         $e_rowpm4 = $e_pm4->fetch_all(MYSQLI_ASSOC);
 
-        $e_dz4 = $link->query("SELECT * FROM course_2 WHERE grupa='DZ'");
+        $e_dz4 = $link->query("SELECT * FROM course_4 WHERE grupa='DZ'");
         $e_rowdz4 = $e_dz4->fetch_all(MYSQLI_ASSOC);
 
-        $e_pr4 = $link->query("SELECT * FROM course_2 WHERE grupa='PR'");
+        $e_pr4 = $link->query("SELECT * FROM course_4 WHERE grupa='PR'");
         $e_rowpr4 = $e_pr4->fetch_all(MYSQLI_ASSOC);
 
-        $e_tr4 = $link->query("SELECT * FROM course_2 WHERE grupa='TR'");
+        $e_tr4 = $link->query("SELECT * FROM course_4 WHERE grupa='TR'");
         $e_rowtr4 = $e_tr4->fetch_all(MYSQLI_ASSOC);
 /* Word*/
-        $w_po4 = $link1->query("SELECT * FROM course_2 WHERE grupa='PO'");
+        $w_po4 = $link1->query("SELECT * FROM course_4 WHERE grupa='PO'");
         $w_rowpo4 = $w_po4->fetch_all(MYSQLI_ASSOC);
 
-        $w_do4 = $link1->query("SELECT * FROM course_2 WHERE grupa='DO'");
+        $w_do4 = $link1->query("SELECT * FROM course_4 WHERE grupa='DO'");
         $w_rowdo4 = $w_do4->fetch_all(MYSQLI_ASSOC);
 
-        $w_pm4 = $link1->query("SELECT * FROM course_2 WHERE grupa='PM'");
+        $w_pm4 = $link1->query("SELECT * FROM course_4 WHERE grupa='PM'");
         $w_rowpm4 = $w_pm4->fetch_all(MYSQLI_ASSOC);
 
-        $w_dz4 = $link1->query("SELECT * FROM course_2 WHERE grupa='DZ'");
+        $w_dz4 = $link1->query("SELECT * FROM course_4 WHERE grupa='DZ'");
         $w_rowdz4 = $w_dz4->fetch_all(MYSQLI_ASSOC);
 
-        $w_pr4 = $link1->query("SELECT * FROM course_2 WHERE grupa='PR'");
+        $w_pr4 = $link1->query("SELECT * FROM course_4 WHERE grupa='PR'");
         $w_rowpr4 = $w_pr4->fetch_all(MYSQLI_ASSOC);
 
-        $w_tr4 = $link1->query("SELECT * FROM course_2 WHERE grupa='TR'");
+        $w_tr4 = $link1->query("SELECT * FROM course_4 WHERE grupa='TR'");
         $w_rowtr4 = $w_tr4->fetch_all(MYSQLI_ASSOC);
      ?>
 
@@ -1465,7 +1465,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -1477,9 +1477,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -1490,7 +1490,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -1502,9 +1502,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -1537,7 +1537,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -1549,9 +1549,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -1562,7 +1562,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -1574,9 +1574,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -1606,7 +1606,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -1618,9 +1618,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -1631,7 +1631,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -1643,9 +1643,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -1675,7 +1675,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -1687,9 +1687,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -1700,7 +1700,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -1712,9 +1712,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -1745,7 +1745,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -1757,9 +1757,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -1770,7 +1770,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -1782,9 +1782,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>
@@ -1815,7 +1815,7 @@
                 <th scope="col">Ім'я</th>
                 <th scope="col">Номер лабораторної роботи</th>
                 <th scope="col">Оцінка</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -1827,9 +1827,9 @@
                 <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-            
+
               </tr>
-             
+
             </tbody>
           </table>
         <h3 class="text-center">Word</h3>
@@ -1840,7 +1840,7 @@
                   <th scope="col">Ім'я</th>
                   <th scope="col">Номер лабораторної роботи</th>
                   <th scope="col">Оцінка</th>
-                
+
                 </tr>
               </thead>
               <tbody>
@@ -1852,9 +1852,9 @@
                   <td><?php echo $key['mark']; ?></td>
 
               <?php endforeach ?>
-        
+
                 </tr>
-         
+
               </tbody>
             </table>
       </div>

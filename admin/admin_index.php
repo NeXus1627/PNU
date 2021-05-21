@@ -27,7 +27,7 @@ include 'includes/user_bar.php';
 
                         <?php 
                           include 'includes/db_admin.php';
-                          $query = $link->query("SELECT id FROM users ORDER BY id");
+                          $query = $link1->query("SELECT id FROM admins ORDER BY id");
                           $count = $query->num_rows;
                           echo "<h2>Total Users: $count</h2>";
                          ?>

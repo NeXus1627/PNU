@@ -1,9 +1,28 @@
 <?php
-//include 'security.php';
+include 'security.php';
 include 'includes/db_admin.php';
 
 
-// Оновлення
+// Create admins
+if (isset($_POST['register_btn'])) {
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$usertype = 'admin';
+
+	$query = $link1->query("INSERT INTO admins(username,password,usertype) VALUES('$username','$password','$usertype')");
+	if ($query) {
+		$_SESSION['success'] = 'Your Data is updated';
+		header('Location: register.php');
+	}
+	else {
+		$_SESSION['status'] = 'Your Data is not updated';
+		header('Location: word.php');
+	}
+
+}
+
+
+// Update admins
 
 if (isset($_POST['update_btn'])) {
 	$id = $_POST['edit_id'];
@@ -24,7 +43,7 @@ if (isset($_POST['update_btn'])) {
 
 }
 
-// Видалення
+// Delete admins
 if (isset($_POST['delete_btn'])) {
 	$id = $_POST['delete_id'];
 	$query = $link1->query("DELETE FROM admins WHERE id = '$id'");
@@ -50,7 +69,7 @@ if (isset($_POST['login_btn'])) {
 	$auth = $query->fetch_assoc();
 		if ($auth['usertype'] == 'admin') {
 			$_SESSION['username'] = $email_login;
-			header('Location: admin_index.php');
+			header('Location: ../admin/admin_index.php');
 		}
 		elseif ($auth['usertype'] == 'user') {
 			header('Location:../index.php');
@@ -65,45 +84,249 @@ if (isset($_POST['login_btn'])) {
 
 
 
-// Категорії оновлення
+// Update Word
 
-if (isset($_POST['update_btn_cat'])) {
+if (isset($_POST['update_btn_word4'])) {
 	$id = $_POST['edit_id'];
 	$mark = $_POST['mark'];
-	var_dump($id);
 
-	
-	$query = $link1->query("UPDATE course_1 SET mark = '$mark', WHERE id = '$id'");
 
-	// if ($query) {
-	// 	$_SESSION['success'] = 'Category is updated';
-	// 	header('Location: word.php');
-	// 	}
-	// 	else {
-	// 		$_SESSION['status'] = 'Category is not updated';
-	// 	header('Location: word.php');
-	// 	}
+	$query = $link1->query("UPDATE course_4 SET mark = $mark WHERE id = $id");
 
+	if ($query) {
+		$_SESSION['success'] = 'Mark is updated';
+		header('Location: word.php');
+		}
+		else {
+			$_SESSION['status'] = 'Mark is not updated';
+		header('Location: word.php');
+		}
 }
 
-if (isset($_POST['delete_btn_cat'])) {
-	$id = $_POST['delete_id'];
-	$photo = $link->query("SELECT image FROM course_1 WHERE id = '$id'");
-	$result = $photo->fetch_assoc();
-	$imagepath = $result['image'];
-	unlink($imagepath);
-	$query = $link->query("DELETE FROM categories WHERE id = '$id'");
+if (isset($_POST['update_btn_word3'])) {
+	$id = $_POST['edit_id'];
+	$mark = $_POST['mark'];
+
+
+	$query = $link1->query("UPDATE course_3 SET mark = $mark WHERE id = $id");
+
 	if ($query) {
-		$_SESSION['success'] = 'Your Category is deleted';
-		header('Location: categories.php');
+		$_SESSION['success'] = 'Mark is updated';
+		header('Location: word.php');
+		}
+		else {
+			$_SESSION['status'] = 'Mark is not updated';
+		header('Location: word.php');
+		}
+}
+
+if (isset($_POST['update_btn_word2'])) {
+	$id = $_POST['edit_id'];
+	$mark = $_POST['mark'];
+
+
+	$query = $link1->query("UPDATE course_2 SET mark = $mark WHERE id = $id");
+
+	if ($query) {
+		$_SESSION['success'] = 'Mark is updated';
+		header('Location: word.php');
+		}
+		else {
+			$_SESSION['status'] = 'Mark is not updated';
+		header('Location: word.php');
+		}
+}
+
+if (isset($_POST['update_btn_word1'])) {
+	$id = $_POST['edit_id'];
+	$mark = $_POST['mark'];
+
+
+	$query = $link1->query("UPDATE course_1 SET mark = $mark WHERE id = $id");
+
+	if ($query) {
+		$_SESSION['success'] = 'Mark is updated';
+		header('Location: word.php');
+		}
+		else {
+			$_SESSION['status'] = 'Mark is not updated';
+		header('Location: word.php');
+		}
+}
+// Delete Word
+if (isset($_POST['delete_btn_word1'])) {
+	$id = $_POST['delete_id'];
+	$query = $link1->query("DELETE FROM course_1 WHERE id = '$id'");
+	if ($query) {
+		$_SESSION['success'] = 'Your Word lab is deleted';
+		header('Location: word.php');
 	}
 	else {
-		$_SESSION['status'] = 'Your Category is not deleted';
-		header('Location: categories.php');
+		$_SESSION['status'] = 'Your Word lab is not deleted';
+		header('Location: word.php');
 	}
 }
 
+if (isset($_POST['delete_btn_word2'])) {
+	$id = $_POST['delete_id'];
+	$query = $link1->query("DELETE FROM course_2 WHERE id = '$id'");
+	if ($query) {
+		$_SESSION['success'] = 'Your Word lab is deleted';
+		header('Location: word.php');
+	}
+	else {
+		$_SESSION['status'] = 'Your Word lab is not deleted';
+		header('Location: word.php');
+	}
+}
 
+if (isset($_POST['delete_btn_word3'])) {
+	$id = $_POST['delete_id'];
+	$query = $link1->query("DELETE FROM course_3 WHERE id = '$id'");
+	if ($query) {
+		$_SESSION['success'] = 'Your Word lab is deleted';
+		header('Location: word.php');
+	}
+	else {
+		$_SESSION['status'] = 'Your Word lab is not deleted';
+		header('Location: word.php');
+	}
+}
+
+if (isset($_POST['delete_btn_word4'])) {
+	$id = $_POST['delete_id'];
+	$query = $link1->query("DELETE FROM course_4 WHERE id = '$id'");
+	if ($query) {
+		$_SESSION['success'] = 'Your Word lab is deleted';
+		header('Location: word.php');
+	}
+	else {
+		$_SESSION['status'] = 'Your Word lab is not deleted';
+		header('Location: word.php');
+	}
+}
+
+// Update Excel
+
+if (isset($_POST['update_btn_excel4'])) {
+	$id = $_POST['edit_id'];
+	$mark = $_POST['mark'];
+
+
+	$query = $link->query("UPDATE course_4 SET mark = $mark WHERE id = $id");
+
+	if ($query) {
+		$_SESSION['success'] = 'Mark is updated';
+		header('Location: excel.php');
+		}
+		else {
+			$_SESSION['status'] = 'Mark is not updated';
+		header('Location: excel.php');
+		}
+}
+
+if (isset($_POST['update_btn_excel3'])) {
+	$id = $_POST['edit_id'];
+	$mark = $_POST['mark'];
+
+
+	$query = $link->query("UPDATE course_3 SET mark = $mark WHERE id = $id");
+
+	if ($query) {
+		$_SESSION['success'] = 'Mark is updated';
+		header('Location: excel.php');
+		}
+		else {
+			$_SESSION['status'] = 'Mark is not updated';
+		header('Location: excel.php');
+		}
+}
+
+if (isset($_POST['update_btn_excel2'])) {
+	$id = $_POST['edit_id'];
+	$mark = $_POST['mark'];
+
+
+	$query = $link->query("UPDATE course_2 SET mark = $mark WHERE id = $id");
+
+	if ($query) {
+		$_SESSION['success'] = 'Mark is updated';
+		header('Location: excel.php');
+		}
+		else {
+			$_SESSION['status'] = 'Mark is not updated';
+		header('Location: excel.php');
+		}
+}
+
+if (isset($_POST['update_btn_excel1'])) {
+	$id = $_POST['edit_id'];
+	$mark = $_POST['mark'];
+
+
+	$query = $link->query("UPDATE course_1 SET mark = $mark WHERE id = $id");
+
+	if ($query) {
+		$_SESSION['success'] = 'Mark is updated';
+		header('Location: excel.php');
+		}
+		else {
+			$_SESSION['status'] = 'Mark is not updated';
+		header('Location: excel.php');
+		}
+}
+// Delete Word
+if (isset($_POST['delete_btn_excel1'])) {
+	$id = $_POST['delete_id'];
+	$query = $link->query("DELETE FROM course_1 WHERE id = '$id'");
+	if ($query) {
+		$_SESSION['success'] = 'Your Excel lab is deleted';
+		header('Location: excel.php');
+	}
+	else {
+		$_SESSION['status'] = 'Your Excel lab is not deleted';
+		header('Location: excel.php');
+	}
+}
+
+if (isset($_POST['delete_btn_excel2'])) {
+	$id = $_POST['delete_id'];
+	$query = $link->query("DELETE FROM course_2 WHERE id = '$id'");
+	if ($query) {
+		$_SESSION['success'] = 'Your Excel lab is deleted';
+		header('Location: excel.php');
+	}
+	else {
+		$_SESSION['status'] = 'Your Excel lab is not deleted';
+		header('Location: excel.php');
+	}
+}
+
+if (isset($_POST['delete_btn_excel3'])) {
+	$id = $_POST['delete_id'];
+	$query = $link->query("DELETE FROM course_3 WHERE id = '$id'");
+	if ($query) {
+		$_SESSION['success'] = 'Your Word lab is deleted';
+		header('Location: excel.php');
+	}
+	else {
+		$_SESSION['status'] = 'Your Word lab is not deleted';
+		header('Location: excel.php');
+	}
+}
+
+if (isset($_POST['delete_btn_excel4'])) {
+	$id = $_POST['delete_id'];
+	$query = $link->query("DELETE FROM course_4 WHERE id = '$id'");
+	if ($query) {
+		$_SESSION['success'] = 'Your Excel lab is deleted';
+		header('Location: excel.php');
+	}
+	else {
+		$_SESSION['status'] = 'Your Word lab is not deleted';
+		header('Location: excel.php');
+	}
+}
 
 
  ?>

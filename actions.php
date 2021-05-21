@@ -48,12 +48,12 @@ if (isset($_POST['add_labexcel'])) {
 	$lab = $_FILES['image']['name'];
 	$upload = "word/".$lab;
 	move_uploaded_file($_FILES['image']['tmp_name'],$upload);
-	// var_dump($name);
-	// var_dump($lastname);
-	// var_dump($course);
-	// var_dump($grupa);
-	// var_dump($lab_num);
-	// var_dump($upload);
+	 // var_dump($name);
+	 // var_dump($lastname);
+	 // var_dump($course);
+     // var_dump($grupa);
+	 // var_dump($lab_num);
+	 // var_dump($upload);
 
 	if($course == "course_1"){
 	$query_1 = $link1->query("INSERT INTO course_1(name,lastname,grupa,lab_num,lab) VALUES('$name','$lastname','$grupa','$lab_num','$upload')");
@@ -74,7 +74,4 @@ if (isset($_POST['add_labexcel'])) {
 	}
 
 	}
-
-	
-
  ?>

@@ -10,6 +10,7 @@
   <meta name="author" content="">
 
   <title>Admin Panel of PNU</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

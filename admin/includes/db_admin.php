@@ -1,4 +1,4 @@
-<?php 
+<?php
 $link = new mysqli('localhost', 'root', '', 'excel') or die($link->error());
 mysqli_set_charset($link, "utf8");
 

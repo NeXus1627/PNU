@@ -2,7 +2,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../admin/index.php">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../admin/admin_index.php">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
@@ -54,11 +54,11 @@
           <span>Excel</span>
         </a>
       </li>
-         <li class="nav-item">
-      </li>
+
+
 
       <!-- Divider -->
-    
+
 
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
@@ -66,7 +66,7 @@
       </div>
 
     </ul>
-    <!-- End of Sidebar --> 
+    <!-- End of Sidebar -->
 
 
 
