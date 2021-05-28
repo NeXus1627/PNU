@@ -59,7 +59,7 @@ if (isset($_POST['delete_btn'])) {
 
 
 
-//Авторизація
+//Login
 
 if (isset($_POST['login_btn'])) {
 	$email_login = $_POST['email'];
@@ -72,7 +72,8 @@ if (isset($_POST['login_btn'])) {
 			header('Location: ../admin/admin_index.php');
 		}
 		elseif ($auth['usertype'] == 'user') {
-			header('Location:../index.php');
+			$_SESSION['status'] = 'You do not have enough permissions';
+			header('Location: login.php');
 		}
 		else {
 			$_SESSION['status'] = 'Email or password is invalible';
@@ -156,6 +157,12 @@ if (isset($_POST['update_btn_word1'])) {
 // Delete Word
 if (isset($_POST['delete_btn_word1'])) {
 	$id = $_POST['delete_id'];
+
+	$lab = $link1->query("SELECT lab FROM course_1 WHERE id = '$id'");
+	$result = $lab->fetch_assoc();
+	$labpath ='../'. $result['lab'];
+	unlink($labpath);
+
 	$query = $link1->query("DELETE FROM course_1 WHERE id = '$id'");
 	if ($query) {
 		$_SESSION['success'] = 'Your Word lab is deleted';
@@ -169,6 +176,12 @@ if (isset($_POST['delete_btn_word1'])) {
 
 if (isset($_POST['delete_btn_word2'])) {
 	$id = $_POST['delete_id'];
+
+	$lab = $link1->query("SELECT lab FROM course_2 WHERE id = '$id'");
+	$result = $lab->fetch_assoc();
+	$labpath ='../'. $result['lab'];
+	unlink($labpath);
+
 	$query = $link1->query("DELETE FROM course_2 WHERE id = '$id'");
 	if ($query) {
 		$_SESSION['success'] = 'Your Word lab is deleted';
@@ -182,6 +195,12 @@ if (isset($_POST['delete_btn_word2'])) {
 
 if (isset($_POST['delete_btn_word3'])) {
 	$id = $_POST['delete_id'];
+
+	$lab = $link1->query("SELECT lab FROM course_3 WHERE id = '$id'");
+	$result = $lab->fetch_assoc();
+	$labpath ='../'. $result['lab'];
+	unlink($labpath);
+
 	$query = $link1->query("DELETE FROM course_3 WHERE id = '$id'");
 	if ($query) {
 		$_SESSION['success'] = 'Your Word lab is deleted';
@@ -195,6 +214,12 @@ if (isset($_POST['delete_btn_word3'])) {
 
 if (isset($_POST['delete_btn_word4'])) {
 	$id = $_POST['delete_id'];
+
+	$lab = $link1->query("SELECT lab FROM course_4 WHERE id = '$id'");
+	$result = $lab->fetch_assoc();
+	$labpath ='../'. $result['lab'];
+	unlink($labpath);
+
 	$query = $link1->query("DELETE FROM course_4 WHERE id = '$id'");
 	if ($query) {
 		$_SESSION['success'] = 'Your Word lab is deleted';
@@ -275,9 +300,15 @@ if (isset($_POST['update_btn_excel1'])) {
 		header('Location: excel.php');
 		}
 }
-// Delete Word
+// Delete Excel
 if (isset($_POST['delete_btn_excel1'])) {
 	$id = $_POST['delete_id'];
+
+	$lab = $link->query("SELECT lab FROM course_1 WHERE id = '$id'");
+	$result = $lab->fetch_assoc();
+	$labpath ='../'. $result['lab'];
+	unlink($labpath);
+
 	$query = $link->query("DELETE FROM course_1 WHERE id = '$id'");
 	if ($query) {
 		$_SESSION['success'] = 'Your Excel lab is deleted';
@@ -291,6 +322,12 @@ if (isset($_POST['delete_btn_excel1'])) {
 
 if (isset($_POST['delete_btn_excel2'])) {
 	$id = $_POST['delete_id'];
+
+	$lab = $link->query("SELECT lab FROM course_2 WHERE id = '$id'");
+	$result = $lab->fetch_assoc();
+	$labpath ='../'. $result['lab'];
+	unlink($labpath);
+
 	$query = $link->query("DELETE FROM course_2 WHERE id = '$id'");
 	if ($query) {
 		$_SESSION['success'] = 'Your Excel lab is deleted';
@@ -304,6 +341,12 @@ if (isset($_POST['delete_btn_excel2'])) {
 
 if (isset($_POST['delete_btn_excel3'])) {
 	$id = $_POST['delete_id'];
+
+	$lab = $link->query("SELECT lab FROM course_3 WHERE id = '$id'");
+	$result = $lab->fetch_assoc();
+	$labpath ='../'. $result['lab'];
+	unlink($labpath);
+
 	$query = $link->query("DELETE FROM course_3 WHERE id = '$id'");
 	if ($query) {
 		$_SESSION['success'] = 'Your Word lab is deleted';
@@ -317,6 +360,12 @@ if (isset($_POST['delete_btn_excel3'])) {
 
 if (isset($_POST['delete_btn_excel4'])) {
 	$id = $_POST['delete_id'];
+
+	$lab = $link->query("SELECT lab FROM course_4 WHERE id = '$id'");
+	$result = $lab->fetch_assoc();
+	$labpath ='../'. $result['lab'];
+	unlink($labpath);
+
 	$query = $link->query("DELETE FROM course_4 WHERE id = '$id'");
 	if ($query) {
 		$_SESSION['success'] = 'Your Excel lab is deleted';

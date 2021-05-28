@@ -5,6 +5,11 @@ include 'includes/header.php';
 include 'includes/navbar.php';
 include 'includes/user_bar.php';
 ?>
+
+<?php  if(isset($_SESSION['success']) && $_SESSION['success']!=""): ?>
+      <h3 class="text-success text-center"><?php echo $_SESSION['success']; unset($_SESSION['success']); ?></h3>
+    <?php  endif;?>
+
  <h2 class="text-center">I курс</h2>
 
     <!-- Earnings (Monthly) Card Example -->
@@ -22,8 +27,9 @@ include 'includes/user_bar.php';
       <th scope="col">Last Name</th>
       <th scope="col">Group</th>
       <th scope="col">lab</th>
+      <th scope="col">File</th>
       <th scope="col">Mark</th>
-      <th scope="col">Mark</th>
+      <th scope="col">Update</th>
       <th scope="col">Delete</th>
     </tr>
   </thead>
@@ -34,6 +40,7 @@ include 'includes/user_bar.php';
       <td><?php echo $key['lastname']; ?></td>
       <td><?php echo $key['grupa']; ?></td>
       <td><?php echo $key['lab_num']; ?></td>
+      <td><a href="../<?php echo $key['lab']; ?>">Download</a></td>
       <td><?php echo $key['mark']; ?></td>
       <td>
 <form action="excel_edit.php" method="post" enctype="multipart/form-data">
@@ -72,8 +79,9 @@ include 'includes/user_bar.php';
       <th scope="col">Last Name</th>
       <th scope="col">Group</th>
       <th scope="col">lab</th>
+      <th scope="col">File</th>
       <th scope="col">Mark</th>
-      <th scope="col">Mark</th>
+      <th scope="col">Update</th>
       <th scope="col">Delete</th>
     </tr>
   </thead>
@@ -84,6 +92,7 @@ include 'includes/user_bar.php';
       <td><?php echo $key['lastname']; ?></td>
       <td><?php echo $key['grupa']; ?></td>
       <td><?php echo $key['lab_num']; ?></td>
+      <td><a href="../<?php echo $key['lab']; ?>">Download</a></td>
       <td><?php echo $key['mark']; ?></td>
       <td>
 <form action="excel_edit.php" method="post" enctype="multipart/form-data">
@@ -122,8 +131,9 @@ include 'includes/user_bar.php';
       <th scope="col">Last Name</th>
       <th scope="col">Group</th>
       <th scope="col">lab</th>
+      <th scope="col">File</th>
       <th scope="col">Mark</th>
-      <th scope="col">Mark</th>
+      <th scope="col">Update</th>
       <th scope="col">Delete</th>
     </tr>
   </thead>
@@ -134,6 +144,7 @@ include 'includes/user_bar.php';
       <td><?php echo $key['lastname']; ?></td>
       <td><?php echo $key['grupa']; ?></td>
       <td><?php echo $key['lab_num']; ?></td>
+      <td><a href="../<?php echo $key['lab']; ?>">Download</a></td>
       <td><?php echo $key['mark']; ?></td>
       <td>
 <form action="excel_edit.php" method="post" enctype="multipart/form-data">
@@ -171,8 +182,9 @@ include 'includes/user_bar.php';
       <th scope="col">Last Name</th>
       <th scope="col">Group</th>
       <th scope="col">lab</th>
+      <th scope="col">File</th>
       <th scope="col">Mark</th>
-      <th scope="col">Mark</th>
+      <th scope="col">Update</th>
       <th scope="col">Delete</th>
     </tr>
   </thead>
@@ -183,6 +195,7 @@ include 'includes/user_bar.php';
       <td><?php echo $key['lastname']; ?></td>
       <td><?php echo $key['grupa']; ?></td>
       <td><?php echo $key['lab_num']; ?></td>
+      <td><a href="../<?php echo $key['lab']; ?>">Download</a></td>
       <td><?php echo $key['mark']; ?></td>
       <td>
 <form action="excel_edit.php" method="post" enctype="multipart/form-data">

@@ -6,6 +6,10 @@ include 'includes/navbar.php';
 include 'includes/user_bar.php';
 ?>
 
+<?php  if(isset($_SESSION['success']) && $_SESSION['success']!=""): ?>
+      <h3 class="text-success text-center"><?php echo $_SESSION['success']; unset($_SESSION['success']); ?></h3>
+    <?php  endif;?>
+
 <div class="modal fade" id="addadminprofile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -59,7 +63,7 @@ include 'includes/user_bar.php';
 
   <div class="card-body">
 
-  
+
 
     <div class="table-responsive">
       <?php

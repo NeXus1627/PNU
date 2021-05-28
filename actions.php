@@ -9,7 +9,7 @@ if (isset($_POST['add_labexcel'])) {
 	$grupa = $_POST['grupa'];
 	$lab_num = $_POST['lab_num'];
 	$lab = $_FILES['image']['name'];
-	$upload = "excel/".$lab;
+	$upload = "admin/excel/".$lab;
 	move_uploaded_file($_FILES['image']['tmp_name'],$upload);
 	//var_dump($name);
 	/*var_dump($lastname);
@@ -46,7 +46,7 @@ if (isset($_POST['add_labexcel'])) {
 	$grupa = $_POST['grupa'];
 	$lab_num = $_POST['lab_num'];
 	$lab = $_FILES['image']['name'];
-	$upload = "word/".$lab;
+	$upload = "admin/word/".$lab;
 	move_uploaded_file($_FILES['image']['tmp_name'],$upload);
 	 // var_dump($name);
 	 // var_dump($lastname);

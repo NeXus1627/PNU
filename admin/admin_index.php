@@ -1,8 +1,8 @@
-<?php 
+<?php
 include 'security.php';
 include 'includes/header.php';
 include 'includes/navbar.php';
-include 'includes/user_bar.php'; 
+include 'includes/user_bar.php';
 ?>
         <!-- Begin Page Content -->
         <div class="container-fluid">
@@ -25,7 +25,7 @@ include 'includes/user_bar.php';
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total rigistered Admin</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">
 
-                        <?php 
+                        <?php
                           include 'includes/db_admin.php';
                           $query = $link1->query("SELECT id FROM admins ORDER BY id");
                           $count = $query->num_rows;
@@ -101,7 +101,7 @@ include 'includes/user_bar.php';
               </div>
             </div>
           </div>
-          
+
 
         </div>
         <!-- /.container-fluid -->
@@ -110,9 +110,8 @@ include 'includes/user_bar.php';
       <!-- End of Main Content -->
 
 
- <?php 
+ <?php
 include 'includes/scripts.php';
 include 'includes/footer.php';
 
   ?>
-

@@ -4,7 +4,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../admin/admin_index.php">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <i class="fa fa-university"></i>
         </div>
         <div class="sidebar-brand-text mx-3">PNU<sup>=)</sup></div>
       </a>
@@ -39,7 +39,7 @@
       <hr class="sidebar-divider">
 
        <div class="sidebar-heading">
-        Categories
+        Lab
       </div>
        <li class="nav-item">
         <a class="nav-link collapsed" href="../admin/word.php">
